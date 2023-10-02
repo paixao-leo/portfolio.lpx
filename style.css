@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;400;600&display=swap');
+
+@import url(./styles/index.css);
+@import url(./styles/about.css);
+@import url(./styles/projects.css);
+@import url(./styles/study.css);
+
+
+
+:root {
+    --cor-primaria: #000;
+    --cinza-claro: #E1E1E1;
+    --cor-secundaria:#ffffff;
+    --cor-terciaria: #FFC300;
+    --cor-hover-nav: #FFD60A;
+
+    --font-primaria: 'Montserrat', sans-serif;
+    --font-secundaria: 'Krona One', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+/* cabeçalho  1900*/
+.cabecalho{
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primaria);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 30px 0px;
+
+}
+.img-navegacao{
+    width: 3%;
+    flex-wrap: wrap;
+    padding: 0 2em;
+}
+.navegacao{
+    color: var(--cor-primaria);
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25rem;
+}
+.navegacao:hover{
+    border: 1px solid var(--cor-primaria);
+    box-shadow: 5px 10px rgb(199, 196, 167);
+    transition: 1s;
+    background-color: var(--cor-hover-nav);
+}
+.lista-cabecalho{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu-hamburguer_mobile{
+    display: none;
+}
+
+
+
+/*rodape geral*/
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-primaria);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.rodape:hover{
+    color: #5c4600;
+    transition: 1s;
+}
+.menu-rodape{
+    text-decoration: none;
+    color: #000;
+}
+
+.navegacao sobre:active{
+    background-color: var(--cor-hover-nav);
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    /* CABEÇALHO */
+    .cabecalho{
+        padding: 5px;
+    }
+    .material-symbols-outlined{
+        display: none;
+    }
+    .navegacao {
+        justify-content: center;
+    }
+    .img-navegacao{
+        display: none;
+    }
+    .menu-hamburguer_mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /*  MENU HAMBURG MOBILE */
+
+     .cabecalho{
+        display: none;
+    }
+   
+    .menu-hamburguer_mobile{
+        display: flex;
+        width: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 0;
+    }
+    .img-navegacao_mobile{
+        display: flex;
+        width: 6%;
+        padding: 0 1em;
+    }
+    .material-symbols-outlined{
+        display: flex;
+        padding: 0 1em;
+    }
+    menu {
+        display: none;
+        position: fixed;
+        top: 5em;
+        left: 10em;
+        background-color: var(--cor-secundaria);
+        border: 1px solid var(--cor-primaria);
+        border-radius: 1em;
+        width: 14em;
+
+    }
+    .lista-hamburg{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style: none;
+    }
+    .lista-hamburg-item{
+       padding: 1em 1em;
+       font-size: 28px;
+
+    }
+    .navegacao-hamburg{
+        font-family: var(--font-primaria);
+        font-weight: 600;
+        font-size: 1.125rem;
+        margin: 30px 0px;
+        text-decoration: none;
+        color: var(--cor-primaria);
+    }
+
+        /* intro */
+        
+    .apresentacao-titulo_inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 35px;    
+        padding: 1em 0.5em;
+    }
